@@ -4,27 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondFragment">
+    tools:context=".PastGamesFragment">
 
     <TextView
-        android:id="@+id/textview_second"
+        android:id="@+id/textView"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Dictionary page. select standard or custom dictionaries, and edit/create custom dictionaries."
-        app:layout_constraintBottom_toTopOf="@id/button_second"
+        android:text="Past Games Fragment. Shows list of past games, and scores, and allows for viewing (and deleting) them"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button_second"
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="103dp"
         android:text="@string/previous"
         style="@style/Widget.AppCompat.Button.Colored"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_second" />
-
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,7 +16,13 @@
             app:destination="@id/SecondFragment" />
         <action
             android:id="@+id/action_FirstFragment_to_Camera_Activity"
-            app:destination="@+id/Camera" />
+            app:destination="@id/camera" />
+        <action
+            android:id="@+id/action_FirstFragment_to_previousGamesFragment"
+            app:destination="@id/previousGamesFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_pastGamesFragment"
+            app:destination="@id/pastGamesFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -33,4 +39,22 @@
         android:name="com.example.fastscrabblescorer.Camera"
         android:label="activity_camera"
         tools:layout="@layout/activity_camera" />
+    <fragment
+        android:id="@+id/previousGamesFragment"
+        android:name="com.example.fastscrabblescorer.PreviousGamesFragment"
+        android:label="fragment_previous_games_list"
+        tools:layout="@layout/fragment_previous_games_list" >
+        <action
+            android:id="@+id/action_previousGamesFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pastGamesFragment"
+        android:name="com.example.fastscrabblescorer.PastGamesFragment"
+        android:label="fragment_past_games"
+        tools:layout="@layout/fragment_past_games" >
+        <action
+            android:id="@+id/action_pastGamesFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
 </navigation>

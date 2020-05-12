@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.fastscrabblescorer">
 
     <application
@@ -11,9 +12,11 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".Camera"
+            android:screenOrientation="portrait"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_camera"
-            android:theme="@style/FullscreenTheme">
+            android:theme="@style/FullscreenTheme"
+            tools:ignore="LockedOrientationActivity">
         </activity>
         <activity
             android:name=".MainActivity"
