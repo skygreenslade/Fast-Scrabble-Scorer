@@ -10,7 +10,7 @@
     <!-- The primary full-screen view. This can be replaced with whatever view
          is needed to present your content, e.g. VideoView, SurfaceView,
          TextureView, etc. -->
-    <TextView
+    <TextureView
         android:id="@+id/fullscreen_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -41,7 +41,7 @@
         </LinearLayout>
 
         <ImageButton
-            android:id="@+id/takePicture"
+            android:id="@+id/takePictureBtn"
             android:layout_width="72dp"
             android:layout_height="72dp"
             android:layout_gravity="bottom|center"
